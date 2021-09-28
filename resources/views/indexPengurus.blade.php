@@ -13,14 +13,12 @@
             <tr>
                 <th>IdS</th>
                 <th>nama</th>
-                <th>gender</th>
             </tr>
 
-            @foreach($santri as $p)
+            @foreach($pengurus as $a)
             <tr>
-                <td>{{ $p->IDSANTRI }}</td>
-                <td>{{ $p->NAMASATRI }}</td>
-                <td>{{ $p->GENDER }}</td>
+                <td>{{ $a->IDPENGURUS }}</td>
+                <td>{{ $a->NAMA }}</td>
             </tr>
             @endforeach
         </table>

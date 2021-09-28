@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\dataSantriController;
+use App\Http\Controllers\DataPengurusController;
+// use App\Models\Santri;
+// use App\Models\pengurus;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,16 +27,18 @@ Route::get('/home', function () {
     ]);
 });
 
-Route::get('/santri', function () {
-    return view('santri', [
-        "title" => "Santri"
-    ]);
-});
+// Route::get('/santri', function () {
+//     return view('santri', [
+//         "title" => "Santri"
+//     ]);
+// });
 
-Route::get('/pengurus', function () {
-    return view('pengurus',[
-        "title" => "Pengurus"
-    ]);
-});
+// Route::get('/pengurus', function () {
+//     return view('pengurus',[
+//         "title" => "Pengurus"
+//     ]);
+// });
 
-Route::get('/dataSantri','dataSantriController@index()');
+Route::get('/santri',[dataSantriController::class, 'index']);
+
+Route::get('/pengurus',[DataPengurusController::class, 'index']);
