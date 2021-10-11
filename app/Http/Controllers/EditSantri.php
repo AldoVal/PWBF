@@ -2,17 +2,14 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
-// use illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Controller;
+use App\Http\COntrollers\Controller;
 
-class dataSantriController extends Controller
+class EditSantri extends Controller
 {
     public function index(){
         $santri = DB::table('santri')->get();
-
-        return view('index',['santri' => $santri]);
+        return view('editsantri',['santri'=>$santri]);
     }
 }

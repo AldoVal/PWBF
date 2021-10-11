@@ -27,18 +27,8 @@ Route::get('/home', function () {
     ]);
 });
 
-// Route::get('/santri', function () {
-//     return view('santri', [
-//         "title" => "Santri"
-//     ]);
-// });
-
-// Route::get('/pengurus', function () {
-//     return view('pengurus',[
-//         "title" => "Pengurus"
-//     ]);
-// });
-
-Route::get('/santri',[dataSantriController::class, 'index']);
-
-Route::get('/pengurus',[DataPengurusController::class, 'index']);
+Route::get('/editsantri', function () {
+    return view('staff.editsantri', [
+        "title" => "PENGURUS|Edit"
+    ]);
+});
