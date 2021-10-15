@@ -7,7 +7,7 @@
 	<h2>Coba Edit</h2>
 	<h3>Detail Peran</h3>
  
-	<a href="/santri/tambah"> + Tambah Peran</a>
+	<a href="/detailperan/tambah"> + Tambah Peran</a>
 	
 	<br/>
 	<br/>
@@ -20,9 +20,9 @@
 		<tr>
             <td>{{ $s->IDSANTRI }}</td>
 			<td>
-				<a href="/santri/edit/{{ $s->IDSANTRI }}">Edit</a>
+				<a href="/santri/edit/{{ $U->IDSANTRI }}">Edit</a>
 				|
-				<a href="/santri/hapus/{{ $s->IDSANTRI}}">Hapus</a>
+				<a href="/santri/hapus/{{ $U->IDSANTRI}}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach

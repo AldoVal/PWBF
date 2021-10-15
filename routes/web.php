@@ -21,14 +21,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/masuk', function () {
+    return view('login', [
+        "title" => "Login"
+    ]);
+});
+
 Route::get('/home', function () {
     return view('home', [
         "title" => "Home"
     ]);
 });
 
-Route::get('/editsantri', function () {
-    return view('staff.editsantri', [
-        "title" => "PENGURUS|Edit"
-    ]);
-});
+Route::get('/santri','Santri@index');
