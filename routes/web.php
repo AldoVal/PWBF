@@ -19,7 +19,7 @@ use App\Http\Controllers\DataPengurusController;
 
 Route::get('/', function () {
     return view('login');
-});
+});//test
 
 Route::get('/masuk', function () {
     return view('login', [
