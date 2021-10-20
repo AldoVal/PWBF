@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ModelSantri;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\COntrollers\Controller;
 
-class EditSantri extends Controller
+class Santri extends Controller
 {
     public function index()
 	{
-		$santri = DB::table('santri')->get();
+		$santri = ModelSantri::all();
 		return view('staff.santri.santri',['santri' => $santri]);
 	}
  

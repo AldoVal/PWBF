@@ -18,7 +18,7 @@ use App\Http\Controllers\DataPengurusController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::get('/masuk', function () {
@@ -33,4 +33,5 @@ Route::get('/home', function () {
     ]);
 });
 
-Route::get('/santri','Santri@index');
+Route::get('/santri','App\Http\Controllers\Santri@index');
+
