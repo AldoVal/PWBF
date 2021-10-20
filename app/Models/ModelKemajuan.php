@@ -8,4 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class ModelKemajuan extends Model
 {
     use HasFactory;
-}
+}//cekbenerga?
